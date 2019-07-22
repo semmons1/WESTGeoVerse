@@ -4,9 +4,8 @@ MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 
 # Get large GeoSpatial libraries
 
-RUN apt-get update \
-  && apt-get upgrade -y \
-  && apt-get install -y --no-install-recommends \
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends \
     wget \
     locales \
     gnupg2 \
@@ -25,9 +24,8 @@ RUN apt-get update \
     
 #Install rJava and default JDK 
 
-RUN apt-get update \
-  && apt-get upgrade -y \
-  && apt-get install -y \
+RUN apt-get update && \
+  apt-get install -y --no-install-recommends \
     default-jdk \
     r-cran-rjava \
     && apt-get clean \
