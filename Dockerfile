@@ -10,6 +10,7 @@ RUN apt-get update \
     locales \
     gnupg2 \
     git \
+    libglib2.0-0 \
     libxml2-dev \
     libssl-dev \
     libcurl4-openssl-dev \
