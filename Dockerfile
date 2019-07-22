@@ -24,7 +24,7 @@ RUN apt-get update \
     
 #Install rJava and default JDK 
 
-RUN apt-get -y update \
+RUN apt-get update \
   && apt-get install -y \
     default-jdk \
     r-cran-rjava \
