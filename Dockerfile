@@ -1,5 +1,5 @@
 # Start with a lightweight Debian image
-FROM rocker/r-base:latest
+FROM rocker/r-base
 MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 
 # Get large GeoSpatial libraries
@@ -10,9 +10,6 @@ RUN apt-get update && \
     locales \
     gnupg2 \
     git \
-    libglib2.0-0 \
-    libglib2.0-bin \
-    libglib2.0-dev \
     libxml2-dev \
     libssl-dev \
     libcurl4-openssl-dev \
