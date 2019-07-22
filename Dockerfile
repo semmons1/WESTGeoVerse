@@ -5,12 +5,12 @@ MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 # Get large GeoSpatial libraries
 
 RUN apt-get update \
+  && apt-get upgrade -y \
   && apt-get install -y --no-install-recommends \
     wget \
     locales \
     gnupg2 \
     git \
-    libglib2.0-0 \
     libxml2-dev \
     libssl-dev \
     libcurl4-openssl-dev \
@@ -19,7 +19,6 @@ RUN apt-get update \
     libssh2-1-dev \
     unixodbc-dev \
     libudunits2-dev \
-    libglib2.0-dev \
     libcairo2-dev \
     libgdal-dev \
     libproj-dev
@@ -27,6 +26,7 @@ RUN apt-get update \
 #Install rJava and default JDK 
 
 RUN apt-get update \
+  && apt-get upgrade -y \
   && apt-get install -y \
     default-jdk \
     r-cran-rjava \
