@@ -18,6 +18,7 @@ RUN apt-get update \
     libssh2-1-dev \
     unixodbc-dev \
     libudunits2-dev \
+    libglib2.0-dev \
     libcairo2-dev \
     libgdal-dev \
     libproj-dev
