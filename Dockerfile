@@ -1,5 +1,5 @@
 # Start with a lightweight Debian image
-FROM rocker/r-base
+FROM rocker/r-base:latest
 MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 
 # Remain up-to-date with upgrades
@@ -10,7 +10,7 @@ RUN apt-get update -qq \
 # Get large GeoSpatial libraries
 
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends \
+  apt-get install -t unstable -y --no-install-recommends \
     git \
     gnupg2 \
     locales \
@@ -23,7 +23,7 @@ RUN apt-get update && \
     libssh2-1-dev \
     unixodbc-dev \
     libudunits2-dev \
-    libcairo2-dev \
+    libcairo2-dev/unstable \
     libgdal-dev \
     libproj-dev
     
