@@ -5,12 +5,13 @@ MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 # Get large GeoSpatial libraries
 
 RUN apt-get update && \
-  apt-get install -y \
-    wget \
-    locales \
-    gnupg2 \
+  apt-get install -y --no-install-recommends \
     git \
+    gnupg2 \
+    locales \
+    wget \
     libxml2-dev \
+    libxt-dev \
     libssl-dev \
     libcurl4-openssl-dev \
     zlib1g-dev \
