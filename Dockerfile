@@ -5,7 +5,7 @@ MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 # Get large GeoSpatial libraries
 
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends \
+  apt-get install -y \
     wget \
     locales \
     gnupg2 \
