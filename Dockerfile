@@ -2,6 +2,11 @@
 FROM rocker/r-base
 MAINTAINER "Stefan Emmons" stefanemmons@gmail.com
 
+# Remain up-to-date with upgrades
+
+RUN apt-get update -qq \
+  && apt-get dist-upgrade -y
+
 # Get large GeoSpatial libraries
 
 RUN apt-get update && \
@@ -11,7 +16,6 @@ RUN apt-get update && \
     locales \
     wget \
     libxml2-dev \
-    libxt-dev \
     libssl-dev \
     libcurl4-openssl-dev \
     zlib1g-dev \
