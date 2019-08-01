@@ -25,7 +25,9 @@ RUN apt-get update && \
     libudunits2-dev \
     libcairo2-dev/unstable \
     libgdal-dev \
-    libproj-dev
+    libproj-dev \
+    && install2.r --error \
+    rgdal
     
 #Install rJava and default JDK 
 
