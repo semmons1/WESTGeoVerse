@@ -25,10 +25,7 @@ RUN apt-get update && \
     libudunits2-dev \
     libcairo2-dev/unstable \
     libgdal-dev \
-    libproj-dev \
-    && install2.r --error \
-      devtools \
-      roxygen2
+    libproj-dev
     
 #Install rJava and default JDK 
 
